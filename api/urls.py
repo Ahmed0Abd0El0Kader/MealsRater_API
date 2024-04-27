@@ -6,6 +6,7 @@ from .views import *
 app_name  = 'api'
 
 router  = routers.DefaultRouter()
+router.register('users',UserViewSet)
 router.register('meals',MealViewSet)
 router.register('ratings',RatingViewSet)
 
